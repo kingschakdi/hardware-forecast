@@ -1,0 +1,8 @@
+comparison,dm_stat,p_value,significant
+Croston's (SBA) vs Moving Average,-1.6732741403487523,0.09427334078712502,no
+Croston's (SBA) vs Exponential Smoothing,-2.3998136838376256,0.016403418641060874,yes
+Croston's (SBA) vs Croston's,-3.9568504953248316,7.594442763103615e-05,yes
+Croston's (SBA) vs Random Forest,-0.8677632247851388,0.3855239660649157,no
+Croston's (SBA) vs Gradient Boosting,-0.9349786486357671,0.34979930301844675,no
+Croston's (SBA) vs MLP,-3.7017385340490123,0.00021412721802338552,yes
+Croston's (SBA) vs LSTM,-1.4876863139350474,0.13683363855997377,no

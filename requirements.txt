@@ -1,0 +1,16 @@
+# Core data handling
+pandas==2.2.2
+numpy==1.26.4
+
+# Forecasting / stats usage (more to be added later)
+statsmodels==0.14.2
+scikit-learn==1.5.1
+
+# Plotting (for EDA and later dashboard)
+matplotlib==3.9.1
+
+# Neural networks (MLP and LSTM)
+tensorflow==2.16.1
+
+
+streamlit==1.60.0       # dashboard
