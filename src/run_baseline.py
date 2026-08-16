@@ -1,14 +1,8 @@
 """
 run_baseline.py
 ---------------
-End-to-end demonstration of the COMPLETED baseline pipeline on real GPU data:
 
-    load real data -> hold out last 3 months -> Moving Average forecast -> RMSE
-
-This proves the core pipeline works end to end. The more advanced models
-(Croston's, RF, MLP, LSTM) and metrics (MAE, MASE) are stubbed in their
-modules and will be slotted into this same harness in later phases.
-
+(Note to self on how to use this again)
 Run:  python src/run_baseline.py
 """
 

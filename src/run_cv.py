@@ -8,7 +8,7 @@ only on data before each window. This gives a more robust estimate of
 forecast accuracy and its variability than a single hold-out.
 
 GPU series are short (~24 monthly points) so a few folds are feasible.
-RAM series are much shorter (~9-10 points), so RAM uses fewer folds and its
+RAM series are much shorter (~9-10 points) so RAM uses fewer folds and its 
 cross-validation is correspondingly limited — a documented limitation.
 """
 

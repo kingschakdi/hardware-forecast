@@ -5,7 +5,7 @@ RANDOM_SEED = 42  # fixed for reproducibility (NFR4)
 
 
 # ---------------------------------------------------------------------------
-# Moving Average - COMPLETED/MIGHT NEED A RECHECK LATER
+# Moving Average 
 # ---------------------------------------------------------------------------
 def moving_average(history, horizon: int = 3, window: int = 3):
     """
@@ -73,7 +73,7 @@ def exponential_smoothing(history, horizon: int = 3, alpha: float = 0.3):
 
 
 # ---------------------------------------------------------------------------
-# Croston's method — IN PROGRESS
+# Croston's method 
 # ---------------------------------------------------------------------------
 def crostons_method(history, horizon: int = 3, alpha: float = 0.1, sba: bool = False):
     """
@@ -135,7 +135,7 @@ def crostons_method(history, horizon: int = 3, alpha: float = 0.1, sba: bool = F
 
 
 # ---------------------------------------------------------------------------
-# Advanced models — IN PROGRESS
+# Advanced models 
 # ---------------------------------------------------------------------------
 def random_forest_forecast(*args, **kwargs):
     """REMAINING: Random Forest regressor with lag features (later phase)."""

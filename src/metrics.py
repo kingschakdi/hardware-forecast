@@ -2,23 +2,13 @@
 metrics.py
 ----------
 Forecast-accuracy metrics.
-
-STATUS (PROM06 Assignment 1 — early stage):
-    - rmse()  : COMPLETED
-    - mae()   : IN PROGRESS (stub)
-    - mase()  : IN PROGRESS (stub — important for intermittent series)
-
-These three were chosen in the project plan (PROM05) because they capture
-different error behaviours. MASE in particular is recommended for intermittent
-demand because it stays well-defined when actual values are zero
-(Hyndman & Koehler, 2006).
 """
 
 import numpy as np
 
 
 # ---------------------------------------------------------------------------
-# RMSE — COMPLETED
+# RMSE 
 # ---------------------------------------------------------------------------
 def rmse(actual, forecast) -> float:
     """
@@ -35,7 +25,7 @@ def rmse(actual, forecast) -> float:
 
 
 # ---------------------------------------------------------------------------
-# MAE — IN PROGRESS
+# MAE 
 # ---------------------------------------------------------------------------
 def mae(actual, forecast) -> float:
     """
@@ -50,7 +40,7 @@ def mae(actual, forecast) -> float:
 
 
 # ---------------------------------------------------------------------------
-# MASE — IN PROGRESS
+# MASE 
 # ---------------------------------------------------------------------------
 def mase(actual, forecast, training_series) -> float:
     """

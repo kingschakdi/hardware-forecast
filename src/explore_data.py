@@ -3,12 +3,7 @@ explore_data.py
 ---------------
 Exploratory data analysis on the real GPU price dataset.
 
-This is a COMPLETED early-stage script. It:
-    1. loads the real GPU price data
-    2. prints summary statistics
-    3. classifies each GPU model's price series by demand pattern
-    4. saves a simple plot of a sample model's price history to outputs/
-
+(Note to self on how to use this again)
 Run:  python src/explore_data.py
 """
 

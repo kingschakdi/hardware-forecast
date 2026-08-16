@@ -12,12 +12,6 @@ literature (Syntetos & Boylan; used by Lucht et al., 2022):
 Classification uses two standard statistics:
     - ADI  (Average Demand Interval): mean gap between non-zero observations
     - CV^2 (squared Coefficient of Variation of non-zero values)
-
-Standard cut-offs from the literature:
-    ADI  cut-off = 1.32
-    CV^2 cut-off = 0.49
-
-STATUS: COMPLETED for Assignment 1.
 """
 
 import numpy as np

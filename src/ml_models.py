@@ -12,7 +12,6 @@ to train a tree ensemble per series.
 Feature engineering is controlled by a switch:
     feature_set="simple" : lag features only
     feature_set="rich"   : lags + rolling mean/std + month
-This lets us start simple and later compare the two (see evaluation phase).
 """
 
 import numpy as np

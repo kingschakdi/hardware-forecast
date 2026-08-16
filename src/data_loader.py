@@ -4,12 +4,6 @@ data_loader.py
 Loads and cleans hardware component price datasets into a common tidy format:
     columns = [component, model, date, price, frequency, source, data_type]
     where data_type is 'real' or 'simulated'.
-
-STATUS (PROM06 Assignment 1 — early stage):
-    - load_gpu_prices()  : COMPLETED (real Kaggle data)
-    - load_ram_prices()  : IN PROGRESS (real data on disk, parsing TODO)
-    - load_ssd_prices()  : IN PROGRESS (real data on disk, parsing TODO)
-    - load_cpu_prices()  : REMAINING (no real series; will be simulated later)
 """
 
 import pandas as pd
@@ -20,10 +14,12 @@ RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 
 
 # ---------------------------------------------------------------------------
-# GPU — COMPLETED (real data)
+# GPU 
 # ---------------------------------------------------------------------------
 def load_gpu_prices() -> pd.DataFrame:
     """
+    Note:
+    
     Load and clean the Kaggle GPU price-history dataset.
 
     Returns a tidy DataFrame with one row per (model, date):
@@ -73,10 +69,12 @@ def get_gpu_series(model_name: str) -> pd.Series:
 
 
 # ---------------------------------------------------------------------------
-# RAM — IN PROGRESS
+# RAM 
 # ---------------------------------------------------------------------------
 def load_ram_prices() -> pd.DataFrame:
     """
+    Note:
+    
     Load RAM price data from the RamRadar price index.
 
     Source is a daily index of average price-per-GB, broken down by RAM type
@@ -121,10 +119,12 @@ def load_ram_prices() -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# SSD — IN PROGRESS
+# SSD 
 # ---------------------------------------------------------------------------
 def load_ssd_prices() -> pd.DataFrame:
     """
+    Note:
+    
     Load SSD price data derived from the FRED producer price index PCU33443344.
 
     The source is a monthly price INDEX (not dollar prices), so it is converted
@@ -177,11 +177,13 @@ def load_ssd_prices() -> pd.DataFrame:
 
 
 # ---------------------------------------------------------------------------
-# CPU — REMAINING (simulation, later phase)
+# CPU (Simulated Data)
 # ---------------------------------------------------------------------------
 
 def load_cpu_prices() -> pd.DataFrame:
     """
+    Note:
+
     Generate SIMULATED CPU price data.
 
     No real per-model CPU price time-series was available (only specification
