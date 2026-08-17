@@ -9,31 +9,6 @@ components is not available, price is used as an indicator of demand (see method
 
 ---
 
-## ⚠️ Project status — what is done vs in progress
-
-This repository represents **early-stage progress**, not a finished system. Current state:
-
-### Completed
-- [x] Project structure and environment setup
-- [x] Data loader for GPU price history (real data, Kaggle)
-- [x] Data cleaning for GPU series (date parsing, zero-price handling)
-- [x] Intermittency classification (Syntetos & Boylan / Lucht et al. quadrant)
-- [x] Baseline forecasting model: Moving Average
-- [x] Accuracy metric: RMSE
-
-### In progress
-- [ ] Croston's method (stub written, logic TODO)
-- [ ] Additional metrics: MAE, MASE (stubs written)
-- [ ] Loaders for RAM and SSD price series (real data on disk, parsing TODO)
-
-### Remaining (later PROM06 phases)
-- [ ] Tree-based models (Random Forest, Gradient Boosting)
-- [ ] Neural models (MLP, LSTM)
-- [ ] CPU price simulation (literature-parameterised, no real series available)
-- [ ] Streamlit interactive dashboard
-- [ ] Full rolling-origin cross-validation and statistical testing
-
----
 
 ## Data sources
 
